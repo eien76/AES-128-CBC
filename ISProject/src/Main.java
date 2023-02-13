@@ -1,32 +1,7 @@
 
 
 //I will explain every step with a comment
-import javax.crypto.Cipher;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.NoSuchPaddingException;
-import javax.crypto.SecretKey;
-import javax.crypto.BadPaddingException;
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.SealedObject;
-import javax.crypto.spec.IvParameterSpec;
-import javax.crypto.spec.PBEKeySpec;
-import javax.crypto.spec.SecretKeySpec;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Serializable;
-import java.math.BigInteger;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.KeySpec;
-import java.util.Base64;
-import java.util.Scanner;
+
 
 public class Main {
 	//this method is very important to converet any method such as "hello" to hexa value because we will use the key plain text and also the iv as a hexa to encrypt(got it from stackoverflow)
