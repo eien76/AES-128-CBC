@@ -18,7 +18,7 @@ public class Dec {
 		
 			byte[] keyByte = HexStringToByteArray(key);	    
 			SecretKeySpec secretKey = new SecretKeySpec(keyByte,"AES");
-	        IvParameterSpec ivparameterspec = new IvParameterSpec(HexStringToByteArray("aabbccddeeff00998877665544332211"));
+	        IvParameterSpec ivparameterspec = new IvParameterSpec(HexStringToByteArray(iv));
 	        Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
 	        cipher.init(Cipher.DECRYPT_MODE, secretKey, ivparameterspec);
 	        byte[] plainText = cipher.doFinal(HexStringToByteArray(cipherText));
